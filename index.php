@@ -47,11 +47,29 @@
     </div>
     <div>
         <h5> Our website is secure (this image can be click):</h5>
-        <a href="img/secret.html"><img src="img/secure-img" alt="secure img"></a>
+        <a href="../img/secret.html">
+            <img src="img/secure-img" alt="secure img">
+        </a>
         <h5> And fast :</h5>
         <img src="img/fast-acting.jpg" alt="fast img">
     </div>
     <p> This is a link which redirect you to : <a href="https://instagram.com"> Our instagram page</a></p>
-    <form action="" method="get"></form>
+    <br>
+    <br>
+    <br>
+    <form action="response.php" method="GET">
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email">
+        </div>
+        <div>
+            <label for="message">Votre message</label>
+            <textarea placeholder="Entrez votre commentaire" name="message"></textarea>
+        </div>
+    
+        <button type="submit">Poster</button>
+    </form>
+    <br>
+    <br>
 </body>
 </html>
