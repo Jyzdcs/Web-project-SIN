@@ -1,0 +1,39 @@
+body {
+    background-color: #535c68;
+}
+
+h1 {
+    margin-left: 650px;
+    color: white;
+}
+
+
+p,
+li,
+h5,
+ul {
+    color: white;
+}
+
+img {
+    width: 400px;
+    height: 350px;
+    margin-left: 320px;
+    margin-top: 50px;
+}
+
+a {
+    color: white;
+    font-style: oblique;
+}
+
+
+.block {
+    display: inline-block;
+    margin-left: 250px;    
+}
+
+.font-title {
+    background-color: #30336b;
+    border: 5px solid #ffffff;
+}
