@@ -1,8 +1,139 @@
-<html>
-  <head>
-    
-  </head>
-  <body>
-    
-  </body>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Jiu-Jitsu Brésilien</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #contenu {
+            background-color: #483d8b;
+            border: 2px solid #6a5acd;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            text-align: center;
+        }
+        #titre {
+            background-color: #6a5acd;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        h5 {
+            color: #6a5acd;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+        form {
+            margin-top: 20px;
+            text-align: center;
+        }
+        textarea, input[type="email"], button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            width: 80%;
+            border: 1px solid #6a5acd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #6a5acd;
+            color: #fff;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #483d8b;
+        }
+    </style>
+</head>
+<body>
+    <div id="contenu">
+        <div id="titre">
+            <h1>Le Jiu-Jitsu Brésilien</h1>
+        </div>
+        <div>
+            <h5>Qu'est-ce que le JJB ?</h5>
+            <p>Le Jiu-Jitsu Brésilien, également connu sous le nom de BJJ, est un art martial de combat au sol qui se concentre sur les techniques de soumission et de contrôle.</p>
+            <h5>Pourquoi choisir le JJB ?</h5>
+            <ul>
+                <li>Excellent pour la défense personnelle</li>
+                <li>Renforce la confiance en soi</li>
+                <li>Améliore la forme physique et la flexibilité</li>
+            </ul>
+            <h5>Dans quelles situations le JJB est-il utile ?</h5>
+            <ul>
+                <li>En cas d'attaque physique</li>
+                <li>Pour la résolution de conflits sans violence</li>
+                <li>Comme sport de compétition</li>
+            </ul>
+        </div>
+        <div>
+            <img src="https://contents.mediadecathlon.com/p2091747/k$88ac814c84275684e028197ffd578a45/1800x0/3935pt2472/3649xcr2737/WEB_dsk%252Cmob%252Ctab_sadvi_fr_FR_2018_JIUJITSU%255B%255Djjb.jpg?format=auto" alt="Image JJB 1">
+            <img src="https://boa-fightwear.fr/img/cms/Jiu-Jitsu-Bresilien/Jiu-Jitsu-Bresilien%E2%80%8B.jpg" alt="Image JJB 2">
+        </div>
+        <form action="response.php" method="GET">
+            <textarea name="message" placeholder="Votre message"></textarea>
+            <input type="email" name="email" placeholder="Votre email">
+            <button type="submit">Envoyer</button>
+        </form>
+        <button onclick="changerCouleurs('violet')">Thème violet</button>
+        <button onclick="changerCouleurs('bleu')">Thème bleu</button>
+        <button onclick="resetCouleurs()">Réinitialiser</button>
+
+    </div>
+
+    <script>
+        function changerCouleurs(theme) {
+            var elements = document.querySelectorAll('#contenu, #titre, h5, ul li, button');
+            var couleurFond, couleurBordure, couleurTexte;
+
+            if (theme === 'violet') {
+                couleurFond = '#483d8b'; // Violet foncé
+                couleurBordure = '#6a5acd'; // Violet
+                couleurTexte = '#fff'; // Blanc
+            } else if (theme === 'bleu') {
+                couleurFond = '#87ceeb'; // Bleu clair azur
+                couleurBordure = '#1e90ff'; // Bleu marine ou très foncé
+                couleurTexte = '#fff'; // Blanc
+            }
+
+            elements.forEach(function(element) {
+                element.style.backgroundColor = couleurFond;
+                element.style.borderColor = couleurBordure;
+                element.style.color = couleurTexte;
+            });
+        }
+
+        function resetCouleurs() {
+            var elements = document.querySelectorAll('#contenu, #titre, h5, ul li, button');
+            elements.forEach(function(element) {
+                element.style.backgroundColor = '#f0f0f0'; // Fond blanc
+                element.style.borderColor = '#6a5acd'; // Violet
+                element.style.color = '#333'; // Noir
+            });
+        }
+    </script>
+
+</body>
 </html>
