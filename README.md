@@ -10,24 +10,13 @@ Il est conseiller de faire les manoeuvre requise sur machine virtuelle. Docker p
 - Telecharger vscode
 - Telecharger php
 
-### Installation
-
-Les étapes pour installer votre programme....
-
-Dites ce qu'il faut faire...
-
-_exemple_: Executez la commande ``telnet mapscii.me`` pour commencer ensuite [...]
-
-
-Ensuite vous pouvez montrer ce que vous obtenez au final...
-
-## Démarrage
-
-Dites comment faire pour lancer votre projet
 
 ## Fabriqué avec
 
 Le logiciel xampp.
+html.
+php.
+sql.
 
 ## Auteurs
 * **Cladant Kylian** _alias_ [@outout14](https://github.com/Jyzdcs)
